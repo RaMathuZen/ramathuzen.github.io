@@ -3,14 +3,14 @@
 #
 
 # Name of your site (displayed in the header)
-name: Nic's Accessibility Minute
+name: Annamalai's Web Presence
 
 # Short bio or description (displayed in the header)
-description: Talking about accessibility, one minute at a time!
+description: interacts with Signals also flip the bits
 
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://avatars.githubusercontent.com/u/29165258?v=4
+avatar: https://avatars.githubusercontent.com/u/91740832?v=4
 
 #
 # Flags below are optional
@@ -20,17 +20,17 @@ avatar: https://avatars.githubusercontent.com/u/29165258?v=4
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email: 
+  email: srirammount@gmail.com
   facebook:
   flickr:
-  github: vavroom
+  github: ramathuzen
   instagram:
-  linkedin: nicolassteenhout
+  linkedin: annamalai-n-1684b31aa
   pinterest:
-  rss: # just type anything here for a working RSS 
-  twitter: vavroom
+  rss: feed
+  twitter: ramathuzen
   stackoverflow: 
-  youtube: user/nicolassteenhout
+  youtube: 
   googleplus: 
 
 
@@ -49,7 +49,7 @@ url: https://a11y-rules.nicolas-steenhout.com
 # (http://yourusername.github.io/repository-name)
 # and NOT your User repository (http://yourusername.github.io)
 # then add in the baseurl here, like this: "/repository-name"
-baseurl: 
+baseurl: ramathuzen.github.io
 
 #
 # !! You don't need to change any of the configuration flags below !!
