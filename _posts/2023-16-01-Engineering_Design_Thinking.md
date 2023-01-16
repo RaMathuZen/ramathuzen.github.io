@@ -1,5 +1,5 @@
 ---
-layout:post
+layout: post
 title: Design Thinking
 ---
 
@@ -15,7 +15,7 @@ title: Design Thinking
 
 - 3 idiot dialogues "How does an induction motor starts ?"
 
-##Takeaways:
+## Takeaways:
 
 - Have some *thought process*/*brainstorm*
 
