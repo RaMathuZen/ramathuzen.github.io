@@ -9,7 +9,7 @@ title: Design Thinking
 
 - Fish Bone Analysis 
 
-	Why it works ? ,Why it doesn't works ?
+	> Why it works ? ,Why it doesn't works ?
 
 - Design Diaries
 
@@ -21,7 +21,7 @@ title: Design Thinking
 
 - Pritiorizing tasks
 
-	Those "which are must and critical" and "which are okayish and perfection might be tolerated".
+ >Those "which are must and critical" and "which are okayish and perfection might be tolerated".
 
 - **Understand the Challenge**
 
