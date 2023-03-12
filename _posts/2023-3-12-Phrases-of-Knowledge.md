@@ -12,6 +12,6 @@ tags: ["General"]
 
 - ***Make New Mistakes***
 
-- ***First Principles Thinking ***
+- ***First Principles Thinking***
 
 - ***System 2 Thinking***
