@@ -15,4 +15,4 @@ This is a blog post that will reside in my bookmarks to remind me about some too
 
 ## Coding
 
-- symbex - to search for specific *classes* and *functions* in all python source files present in a directory and can also be used to pipe to llm inorder to explain it.
+- **symbex** - to search for specific *classes* and *functions* in all python source files present in a directory and can also be used to pipe to llm inorder to explain it.
