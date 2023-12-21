@@ -8,7 +8,7 @@ title: The Heilmeier Catechism
 - George H. Heilmeier, a former DARPA director (1975-1977), crafted a set of questions known as the **Heilmeier Catechism** 
 to help Agency officials think through and evaluate proposed research programs.
 
-> ### The 8 Questions
+### The 8 Questions
 
     1. What are you trying to do? Articulate your objectives using absolutely no jargon.
     
