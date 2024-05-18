@@ -14,12 +14,14 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: "Annamalai's Web Presence"
-email: 
+subtitle:
+  "playing with systems ..."
+email: "srirammount@gmail.com" 
 description: >- # this means to ignore newlines until "baseurl:"
   "playing with systems ..."
 twitter_username: "ramathuzen"
 github_username: "ramathuzen" 
-minimal_mistakes_skin: neon 
+minimal_mistakes_skin: dark 
 search: true
 
 # Build settings
@@ -57,7 +59,7 @@ plugins:
 author:
   name   : "Annamalai N"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "Control Engineering Undergrad at NIT-Trichy. Interested in Control & Embedded systems. FOSSer."
+  bio    : "Control Engineering Undergrad at NIT-Trichy"
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
