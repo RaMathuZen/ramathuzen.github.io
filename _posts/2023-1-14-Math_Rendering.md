@@ -1,6 +1,7 @@
 ---
-layout: post
-title: Math Rendering Check
+title: "Math Rendering Check"
+date: 2023-01-14
+categories: General
 ---
 
 # Math Rendering

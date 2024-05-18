@@ -1,8 +1,9 @@
 ---
-layout: post
-title: My First Blog Post
-tags: ["General"]
+title: "Hello World !"
+date: 2023-01-14
+categories: General
 ---
+
 ## Hi,
 
 This is my first blog post. My main intention to have a blog is that,
