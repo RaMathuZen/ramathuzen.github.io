@@ -26,10 +26,6 @@ search: true
 
 # Build settings
 markdown: kramdown
-  parse_block_html: true
-  input: GFM
-  syntax_highlighter_opts:
-    disable: true
 
 remote_theme: mmistakes/minimal-mistakes
 # Outputting
