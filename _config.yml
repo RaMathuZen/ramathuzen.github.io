@@ -20,7 +20,8 @@ email: "srirammount@gmail.com"
 description: >- # this means to ignore newlines until "baseurl:"
   "playing with systems ..."
 twitter_username: "ramathuzen"
-github_username: "ramathuzen" 
+github_username: "ramathuzen"
+mastodon_username: "annamalai"
 minimal_mistakes_skin: neon 
 search: true
 
@@ -71,6 +72,9 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/ramathuzen"
+    - label: "Mastodon"
+      icon: "fab fa-fw fa-mastodon"
+      url: "https://mathstodon.xyz/@annamalai"
 
 footer:
   links:
@@ -80,6 +84,9 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/ramathuzen"
+    - label: "Mastodon"
+      icon: "fab fa-fw fa-mastodon"
+      url: "https://mathstodon.xyz/@annamalai"
 
 defaults:
   # _posts
