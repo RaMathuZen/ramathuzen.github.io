@@ -8,8 +8,6 @@ tags:
   - hyperdrive
 ---
 
-# Emacs - hyperdrive
-
 **Last Updated: 02nd July 2025**
 
 While I was looking into past EmacsConf talks (just to explore Emacs...), I found this talk about [https://emacsconf.org/2023/talks/hyperdrive/](hyperdrive.el: Peer-to-peer filesystem in Emacs) in EmacsConf 2023, where [Prot](https://protesilaos.com/) and Joseph explained about this "decentralized drive" and how to use it from Emacs. This seemed to be a nice way to share files without any third party online services and also embraces privacy too (We can even stream audio/video too !). So I just want to give it a try and explore this and so I'm going to share what I've done so far.

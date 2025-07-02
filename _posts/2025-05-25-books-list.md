@@ -1,6 +1,6 @@
 ---
-title: 2025 Books List
-date: 2025-05-25
+title: The 2025 Books List
+date: 2025-06-24
 categories: books, notes, life
 tags:
   - books
@@ -8,9 +8,7 @@ tags:
   - life
 ---
 
-# The 2025 Books List
-
-**Last Updated: 25th May 2025**
+**Last Updated: 24th June 2025**
 
 Here's the list of books that I've read so far and about to...
 
@@ -32,6 +30,10 @@ Here's the list of books that I've read so far and about to...
 
 > written by Eliyahu Goldratt for explaining his **Theory of Constraints** concept in a novel fashion through Alex Rogo and Jonah. Really liked the book, mainly the ToC concepts which he had explained through the problems faced by the manufacturing plant, finding their goal, improving their operations and also about **Socratic Dialogue**, etc. A Management Fiction. This is my second time reading this book (the english version) as the BEE (Business and Entreupreneurship for Engineers) class which I took made me interested to re-read this book, previously read its tamil version, during COVID (Mar' 20) from Ananda Vikatan magazine collections of my father. Grateful to him. Finished it within few days both the time.
 
+- Learn Javascript in Tamil 
+
+> written by Nithya long time back in [Kaniyam](https://kaniyam.com/). Had a glance over it, to learn about JS basics which I needed inorder to understand the JS in my dashboard and as well as for XSS payloads as well (I'd been learning about some basics of Web Security, from [Cyber Adam](https://www.youtube.com/@Cyberadam) as I got interested to know about common vulnerabilities found in webapps and how to check for that in my dashboard which I'd vibed). It's a good book to get some idea about JS and JQuery.
+
 
 ## Current
 
@@ -41,13 +43,13 @@ Here's the list of books that I've read so far and about to...
 - Bottle of Lies - Ranbaxy and the Darkside of Indian Pharma (Non Fiction)
 > written by investigative journalist Katherine Eban, exposing quality issues found in Ranbaxy, the generic drug manufacturer and why it had happened.
 
+- Ordinary Stocks and Extra Ordinary Profits (Finance, Business)
+> written by Anand Srinivasan, a popular financial advisor. It is his "red book" which explains the fundas of Stock Market and How to invest for value with examples based on India. Reading to improve my knowledge on investments.
+
 - 100$ Startup - Reinvent the way you make a living (Non Fiction, Business)
 
 - Crypto Confidential (Non Fiction, Business)
 > Recently been exploring various schema of investments and so learning about stocks, crypto and  web3 stuffs...
-
-- குளோப்-சாமுன் (Non Fiction, Geo Politics)
-> பாராவின் உலக அரசியல் கருத்துக்கள்... 
 
 ## Next
 
