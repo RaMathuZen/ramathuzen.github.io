@@ -1,0 +1,105 @@
+baseURL: "https://ramathuzen.github.io/"
+languageCode: "en-us"
+title: "Annamalai"
+theme: "PaperMod"
+
+# Enable KaTeX math delimiters inside Goldmark
+markup:
+  goldmark:
+    extensions:
+      passthrough:
+        enable: true
+        delimiters:
+          block:
+            - ["\\[", "\\]"]
+            - ["$$", "$$"]
+          inline:
+            - ["\\(", "\\)"]
+            - ["$", "$"]
+
+# Required by PaperMod to generate the search index
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+taxonomies:
+  tag: tags
+
+menu:
+  main:
+    - identifier: blogs
+      name: Blogs
+      url: /blogs/
+      weight: 10
+    - identifier: tils
+      name: TILs
+      url: /tils/
+      weight: 20
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 30
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 40
+    - identifier: about
+      name: About
+      url: /
+      weight: 50
+
+params:
+  env: production
+  description: "Notes on systems, life, math, and experiments."
+  author: "Annamalai"
+  
+  # Home page setup
+  profileMode:
+    enabled: true
+    title: "Annamalai"
+    subtitle: "R&D Engineer (Firmware & Algorithms) by job. Business Strategist by Hobby"
+    imageUrl: ""
+    imageTitle: ""
+    imageWidth: 120
+    imageHeight: 120
+    buttons:
+      - name: Blogs
+        url: /blogs/
+      - name: TILs
+        url: /tils/
+      - name: Search
+        url: /search/
+
+  # Enable math rendering
+  math: true
+
+  # Fuse.js Search Engine settings for PaperMod
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    limit: 10
+    keys: ["title", "permalink", "summary", "content"]
+
+  ShowToc: true
+  TocOpen: false
+
+  socialIcons:
+    - name: "github"
+      url: "https://github.com/ramathuzen"
+    - name: "email"
+      url: "mailto:1729.annamal.ai@gmail.com"
+    - name: "rss"
+      url: "/index.xml"
+    - name: "x"
+      url: "https://x.com/ramathuzen"
+    - name: "linkedin"
+      url: "https://www.linkedin.com/in/annamalai-n-1684b31aa/"
+
+  ShowPostNavLinks: true 	
+
