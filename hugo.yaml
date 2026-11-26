@@ -58,8 +58,8 @@ params:
   # Home page setup
   profileMode:
     enabled: true
-    title: "Annamalai"
-    subtitle: "R&D Engineer (Firmware & Algorithms) by job. Business Strategist by Hobby"
+    title: "Annamalai N"
+    subtitle: "R&D (Firmware & Algorithms) by Job. Business Strategist by Hobby"
     imageUrl: ""
     imageTitle: ""
     imageWidth: 120
