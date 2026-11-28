@@ -1,9 +1,11 @@
 baseURL: "https://ramathuzen.github.io/"
-languageCode: "en-us"
+locale: "en-us"
 title: "Annamalai"
-theme: "PaperMod"
+enableRobotsTXT: true
 
-# Enable KaTeX math delimiters inside Goldmark
+# KaTeX delimiters are parsed by Goldmark. Math is rendered to MathML at
+# build time in layouts/_default/_markup/render-passthrough.html, so pages
+# ship no math JavaScript or external CSS.
 markup:
   goldmark:
     extensions:
@@ -16,13 +18,22 @@ markup:
           inline:
             - ["\\(", "\\)"]
             - ["$", "$"]
+  highlight:
+    noClasses: false
+    codeFences: true
+    guessSyntax: true
+    lineNos: false
+    tabWidth: 4
 
-# Required by PaperMod to generate the search index
+# JSON powers the lightweight search page.
 outputs:
   home:
     - HTML
     - RSS
     - JSON
+
+pagination:
+  pagerSize: 10
 
 taxonomies:
   tag: tags
@@ -45,61 +56,17 @@ menu:
       name: Search
       url: /search/
       weight: 40
-    - identifier: about
-      name: About
-      url: /
-      weight: 50
 
 params:
-  env: production
   description: "Notes on systems, life, math, and experiments."
   author: "Annamalai"
-  
-  # Home page setup
-  profileMode:
-    enabled: true
-    title: "Annamalai N"
-    subtitle: "R&D Engineer (Firmware & Algorithms) by Job. Business Strategist by Hobby"
-    imageUrl: ""
-    imageTitle: ""
-    imageWidth: 120
-    imageHeight: 120
-    buttons:
-      - name: Blogs
-        url: /blogs/
-      - name: TILs
-        url: /tils/
-      - name: Search
-        url: /search/
-
-  # Enable math rendering
-  math: true
-
-  # Fuse.js Search Engine settings for PaperMod
-  fuseOpts:
-    isCaseSensitive: false
-    shouldSort: true
-    location: 0
-    distance: 1000
-    threshold: 0.4
-    minMatchCharLength: 0
-    limit: 10
-    keys: ["title", "permalink", "summary", "content"]
-
-  ShowToc: true
-  TocOpen: false
-
-  socialIcons:
-    - name: "github"
+  tagline: "R&D Engineer (Firmware & Algorithms) by Job. Business Strategist by Hobby"
+  social:
+    - name: GitHub
       url: "https://github.com/ramathuzen"
-    - name: "email"
+    - name: Email
       url: "mailto:1729.annamal.ai@gmail.com"
-    - name: "rss"
-      url: "/index.xml"
-    - name: "x"
+    - name: X
       url: "https://x.com/ramathuzen"
-    - name: "linkedin"
+    - name: LinkedIn
       url: "https://www.linkedin.com/in/annamalai-n-1684b31aa/"
-
-  ShowPostNavLinks: true 	
-

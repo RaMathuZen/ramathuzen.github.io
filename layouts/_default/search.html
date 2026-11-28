@@ -1,0 +1,24 @@
+{{ define "main" }}
+  <div class="page-header">
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p class="description">{{ . }}</p>{{ end }}
+  </div>
+
+  {{ with .Content }}<div class="page-intro">{{ . }}</div>{{ end }}
+
+  <label class="visually-hidden" for="search-input">Search</label>
+  <input id="search-input" class="search-input" type="search" placeholder="{{ .Params.placeholder | default "Search..." }}" autocomplete="off" spellcheck="false" data-index="{{ "index.json" | relURL }}" data-blogs="{{ "blogs/" | relURL }}" data-tils="{{ "tils/" | relURL }}">
+
+  <p class="search-status" id="search-status" aria-live="polite"></p>
+  <div id="search-results"></div>
+
+  <noscript>
+    <p class="muted">Search needs JavaScript. Browse all posts below instead.</p>
+    {{ $pages := where site.RegularPages "Section" "in" (slice "blogs" "tils") }}
+    {{ partial "post-list.html" (dict "pages" ($pages.ByDate.Reverse) "showSection" true) }}
+  </noscript>
+{{ end }}
+
+{{ define "scripts" }}
+<script src="{{ "js/search.js" | relURL }}" defer></script>
+{{ end }}

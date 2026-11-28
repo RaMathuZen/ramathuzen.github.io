@@ -1,0 +1,15 @@
+{{ with .pages }}
+<ul class="post-list">
+  {{ range . }}
+  <li>
+    <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+    <span class="post-list-title">
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      {{ if $.showSection }}
+      <span class="section-label">{{ if eq .Section "tils" }}TIL{{ else if eq .Section "blogs" }}Blog{{ else }}{{ .Section | humanize }}{{ end }}</span>
+      {{ end }}
+    </span>
+  </li>
+  {{ end }}
+</ul>
+{{ end }}

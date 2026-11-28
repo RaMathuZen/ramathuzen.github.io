@@ -1,0 +1,23 @@
+{{ define "main" }}
+  <div class="home-header">
+    <h1>Hi, I'm {{ site.Params.author | default site.Title }}.</h1>
+    {{ with site.Params.tagline }}<p class="tagline">{{ . }}</p>{{ end }}
+  </div>
+
+  {{ with .Content }}<div class="home-intro">{{ . }}</div>{{ end }}
+
+  {{ $pages := where site.RegularPages "Section" "in" (slice "blogs" "tils") }}
+  {{ $recent := first 6 (sort $pages "Date" "desc") }}
+  {{ with $recent }}
+  <section class="home-section">
+    <h2>Recent posts</h2>
+    {{ partial "post-list.html" (dict "pages" . "showSection" true) }}
+  </section>
+  {{ end }}
+
+  <p class="more-links">
+    <a href="{{ "blogs/" | relURL }}">All blogs</a>
+    <span class="sep">·</span>
+    <a href="{{ "tils/" | relURL }}">All TILs</a>
+  </p>
+{{ end }}

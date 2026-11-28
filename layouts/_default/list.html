@@ -1,0 +1,17 @@
+{{ define "main" }}
+  <div class="page-header">
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p class="description">{{ . }}</p>{{ end }}
+  </div>
+
+  {{ with .Content }}<div class="page-intro">{{ . }}</div>{{ end }}
+
+  {{ $pages := .RegularPages.ByDate.Reverse }}
+  {{ if $pages }}
+    {{ $paginator := .Paginate $pages }}
+    {{ partial "post-list.html" (dict "pages" $paginator.Pages "showSection" false) }}
+    {{ partial "pagination.html" $paginator }}
+  {{ else }}
+    <p class="muted">Nothing here yet.</p>
+  {{ end }}
+{{ end }}

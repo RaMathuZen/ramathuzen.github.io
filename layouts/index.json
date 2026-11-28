@@ -1,0 +1,20 @@
+{{- $pages := where site.RegularPages "Section" "in" (slice "blogs" "tils") -}}
+{{- $pages = $pages.ByDate.Reverse -}}
+[
+{{- range $i, $p := $pages -}}
+{{- $plain := $p.Content | replaceRE `(?s)<span class="katex">.*?</span>` "" | plainify | htmlUnescape -}}
+{{- $search := $p.Plain | htmlUnescape -}}
+{{- if $i }},{{ end }}
+{
+  "title": {{ $p.Title | jsonify }},
+  "url": {{ $p.RelPermalink | jsonify }},
+  "date": {{ $p.Date.Format "2006-01-02" | jsonify }},
+  "dateDisplay": {{ $p.Date.Format "Jan 2, 2006" | jsonify }},
+  "section": {{ $p.Section | jsonify }},
+  "tags": {{ $p.Params.tags | default (slice) | jsonify }},
+  "summary": {{ $plain | truncate 200 | jsonify }},
+  "content": {{ $plain | jsonify }},
+  "searchText": {{ $search | jsonify }}
+}
+{{- end -}}
+]

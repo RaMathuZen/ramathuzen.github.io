@@ -1,0 +1,12 @@
+<footer class="site-footer">
+  <p>
+    {{ with site.Params.social }}
+      {{ range $index, $link := . }}
+        {{ if $index }}<span class="sep">·</span>{{ end }}<a href="{{ $link.url }}">{{ $link.name }}</a>
+      {{ end }}
+      <span class="sep">·</span>
+    {{ end }}
+    <a href="{{ "index.xml" | relURL }}">RSS</a>
+  </p>
+  <p class="footer-note">© {{ now.Year }} {{ site.Params.author | default site.Title }} · Built with <a href="https://gohugo.io/">Hugo</a></p>
+</footer>

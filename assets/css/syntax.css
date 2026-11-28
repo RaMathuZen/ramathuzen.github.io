@@ -1,0 +1,261 @@
+/*
+ * Chroma syntax highlighting.
+ * Token colours follow GitHub's light/dark palettes, while the code block
+ * background comes from main.css so it matches Bear's inline code style.
+ */
+
+.chroma {
+  background: transparent;
+  color: var(--code-color);
+  -webkit-text-size-adjust: none;
+}
+
+.chroma .err {
+  color: #b31d28;
+}
+
+.chroma .c,
+.chroma .ch,
+.chroma .cm,
+.chroma .c1,
+.chroma .cs,
+.chroma .cp,
+.chroma .cpf {
+  color: #6a737d;
+  font-style: italic;
+}
+
+.chroma .k,
+.chroma .kc,
+.chroma .kd,
+.chroma .kn,
+.chroma .kp,
+.chroma .kr,
+.chroma .kt {
+  color: #cf222e;
+}
+
+.chroma .o,
+.chroma .ow,
+.chroma .or {
+  color: #0550ae;
+}
+
+.chroma .p {
+  color: inherit;
+}
+
+.chroma .n,
+.chroma .na,
+.chroma .nc,
+.chroma .nx,
+.chroma .py,
+.chroma .nn {
+  color: #24292e;
+}
+
+.chroma .nb,
+.chroma .bp,
+.chroma .nf,
+.chroma .fm,
+.chroma .nd,
+.chroma .ni,
+.chroma .ne {
+  color: #6639ba;
+}
+
+.chroma .no {
+  color: #0550ae;
+}
+
+.chroma .nt {
+  color: #0550ae;
+}
+
+.chroma .nv,
+.chroma .vc,
+.chroma .vg,
+.chroma .vi,
+.chroma .vm {
+  color: #953800;
+}
+
+.chroma .s,
+.chroma .sa,
+.chroma .sb,
+.chroma .sc,
+.chroma .dl,
+.chroma .sd,
+.chroma .s2,
+.chroma .se,
+.chroma .sh,
+.chroma .si,
+.chroma .sx,
+.chroma .sr,
+.chroma .s1,
+.chroma .ss {
+  color: #0a3069;
+}
+
+.chroma .m,
+.chroma .mb,
+.chroma .mf,
+.chroma .mh,
+.chroma .mi,
+.chroma .il,
+.chroma .mo {
+  color: #0550ae;
+}
+
+.chroma .gd {
+  color: #82071e;
+  background: #ffebe9;
+}
+
+.chroma .gi {
+  color: #116329;
+  background: #dafbe1;
+}
+
+.chroma .ge {
+  font-style: italic;
+}
+
+.chroma .gs {
+  font-weight: 600;
+}
+
+.chroma .gl {
+  text-decoration: underline;
+}
+
+.chroma .ln,
+.chroma .lnt {
+  color: #7f7f7f;
+}
+
+.chroma .hl {
+  background: #dedede;
+}
+
+.chroma .lntable {
+  border-spacing: 0;
+}
+
+.chroma .lntd {
+  padding: 0;
+  border: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .chroma .err {
+    color: #ffa198;
+  }
+
+  .chroma .c,
+  .chroma .ch,
+  .chroma .cm,
+  .chroma .c1,
+  .chroma .cs,
+  .chroma .cp,
+  .chroma .cpf {
+    color: #8b949e;
+  }
+
+  .chroma .k,
+  .chroma .kc,
+  .chroma .kd,
+  .chroma .kn,
+  .chroma .kp,
+  .chroma .kr,
+  .chroma .kt {
+    color: #ff7b72;
+  }
+
+  .chroma .o,
+  .chroma .ow,
+  .chroma .or {
+    color: #ff7b72;
+  }
+
+  .chroma .n,
+  .chroma .na,
+  .chroma .nc,
+  .chroma .nx,
+  .chroma .py,
+  .chroma .nn {
+    color: #e6edf3;
+  }
+
+  .chroma .nb,
+  .chroma .bp,
+  .chroma .nf,
+  .chroma .fm,
+  .chroma .nd,
+  .chroma .ni,
+  .chroma .ne {
+    color: #d2a8ff;
+  }
+
+  .chroma .no {
+    color: #79c0ff;
+  }
+
+  .chroma .nt {
+    color: #7ee787;
+  }
+
+  .chroma .nv,
+  .chroma .vc,
+  .chroma .vg,
+  .chroma .vi,
+  .chroma .vm {
+    color: #79c0ff;
+  }
+
+  .chroma .s,
+  .chroma .sa,
+  .chroma .sb,
+  .chroma .sc,
+  .chroma .dl,
+  .chroma .sd,
+  .chroma .s2,
+  .chroma .se,
+  .chroma .sh,
+  .chroma .si,
+  .chroma .sx,
+  .chroma .sr,
+  .chroma .s1,
+  .chroma .ss {
+    color: #a5d6ff;
+  }
+
+  .chroma .m,
+  .chroma .mb,
+  .chroma .mf,
+  .chroma .mh,
+  .chroma .mi,
+  .chroma .il,
+  .chroma .mo {
+    color: #79c0ff;
+  }
+
+  .chroma .gd {
+    color: #ffa198;
+    background: #490202;
+  }
+
+  .chroma .gi {
+    color: #56d364;
+    background: #0f5323;
+  }
+
+  .chroma .ln,
+  .chroma .lnt {
+    color: #6e7681;
+  }
+
+  .chroma .hl {
+    background: #6e7681;
+  }
+}
